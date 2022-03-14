@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+
+.calc{
+    height: 300px;
+    width: 300px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10% repeat(5, 1fr);
+    grid-template-areas: 
+    "dis dis dis dis"
+    "plus minus timess divided"
+    "seven eight nine equals"
+    "four five six equals"
+    "one two three equals"
+    "zeroo point AC equals";
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+span{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #899DAE;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+span:hover{
+    background-color: rgb(200, 200, 200);
+}
+
+.calc :nth-child(1){
+    cursor: default;
+    grid-area: dis;
+    color: white;
+    background-color: #424C52;
+    border: 1px solid #424C52;
+    text-align: end;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-right: 5px;
+    padding-top: 0;
+}
+
+.calc :nth-child(2){
+    grid-area: plus;
+    background-color: #D2DCE4;
+    border-left: none;
+}
+
+.calc :nth-child(3){
+    grid-area: minus;
+    background-color: #D2DCE4;
+}
+
+.calc :nth-child(4){
+    grid-area: timess;
+    background-color: #D2DCE4;
+}
+
+.calc :nth-child(5){
+    grid-area: divided;
+    background-color: #D2DCE4;
+    border-right: none;
+}
+
+.calc :nth-child(6){
+    grid-area: seven;
+    border-left: none;
+}
+
+.calc :nth-child(7){
+    grid-area: eight;
+}
+
+.calc :nth-child(8){
+    grid-area: nine;
+}
+
+.calc :nth-child(9){
+    grid-area: four;
+    border-left: none;
+}
+
+.calc :nth-child(10){
+    grid-area: five;
+}
+
+.calc :nth-child(11){
+    grid-area: six;
+}
+
+.calc :nth-child(12){
+    grid-area: one;
+    border-left: none;
+}
+
+.calc :nth-child(13){
+    grid-area: two;
+}
+
+.calc :nth-child(14){
+    grid-area: three;
+}
+
+.calc :nth-child(15){
+    grid-area: zeroo;
+    border-bottom-left-radius: 5px;
+    border-left: none;
+    
+}
+
+.calc :nth-child(16){
+    grid-area: point;
+    border-bottom: none;
+}
+
+.calc :nth-child(17){
+    grid-area: AC;
+    border-bottom: none;
+}
+
+.calc :nth-child(18){
+    grid-area: equals;
+    background-color: #F77077;
+    border-bottom-right-radius: 5px;
+    padding-top: 90px;
+    border-bottom: none;
+    border-right: none;
+}
+
+
+.calc :nth-child(18):hover{
+    background-color: #D77077;
+}
